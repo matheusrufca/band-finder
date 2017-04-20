@@ -1,0 +1,56 @@
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="site.css" rel="stylesheet" />
+</head>
+<body ng-app="app">
+  <div class="container" ng-controller="DemoCtrl">
+    <h2>Angular bgImage directive</h2>
+    <div class="row" >
+      <div class="col-sm-6">
+        <h4>Using string url</h4>
+        <div>
+          <div class="form-group">
+            <input ng-model="nicePicture" type="url" placeholder="Insert URL" class="form-control"/>
+          </div>
+          <div class="img-preview" bg-image="{{getNicePicture()}}"></div>
+        </div>
+        <div>
+          <pre>{{ usageRaw }}</pre>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h4>Using scope model ($scope.pictureUrl)</h4>
+        <div>
+          <div class="form-group">
+            <input ng-model="pictureUrl" type="url" placeholder="Insert URL" class="form-control"/>
+          </div>
+          <div class="img-preview" bg-image="pictureUrl"></div>
+        </div>
+        <div>
+          <pre>{{ usageModel }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+  <script src="src/angular-bgImage.js"></script>
+  <script>
+    (function(){
+      angular
+      .module('app', ['mr'])
+      .controller('DemoCtrl', function($scope){
+        $scope.nicePicture = 'http://i.imgur.com/QXSzVmy.gif';
+        $scope.pictureUrl = 'http://i.imgur.com/xbiHEMe.jpg';
+
+        $scope.getNicePicture = function(){
+          return $scope.nicePicture;
+        };
+
+        $scope.usageRaw = '<div bg-image="{{getNicePicture()}}"></div>';
+        $scope.usageModel = '<div bg-image="pictureUrl"></div>';
+      })
+    })()
+  </script>
+</body>
+</html>
