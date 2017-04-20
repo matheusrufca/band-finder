@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{17A4DE0A-A0B1-4EBB-9E4E-7F3D9CA90E69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30DBDA63-9EE7-4AFA-9E8B-C29E243E7A67}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BandFinder.Web", "src\BandFinder.Web\BandFinder.Web.xproj", "{B35326E0-3F59-402F-A8D2-89328F98E4D4}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BandFinder.Service", "src\BandFinder.Service\BandFinder.Service.xproj", "{362F5883-C83F-49CE-906D-0AEA081E2E82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B35326E0-3F59-402F-A8D2-89328F98E4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35326E0-3F59-402F-A8D2-89328F98E4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35326E0-3F59-402F-A8D2-89328F98E4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35326E0-3F59-402F-A8D2-89328F98E4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362F5883-C83F-49CE-906D-0AEA081E2E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362F5883-C83F-49CE-906D-0AEA081E2E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362F5883-C83F-49CE-906D-0AEA081E2E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362F5883-C83F-49CE-906D-0AEA081E2E82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B35326E0-3F59-402F-A8D2-89328F98E4D4} = {17A4DE0A-A0B1-4EBB-9E4E-7F3D9CA90E69}
+		{362F5883-C83F-49CE-906D-0AEA081E2E82} = {17A4DE0A-A0B1-4EBB-9E4E-7F3D9CA90E69}
+	EndGlobalSection
+EndGlobal
